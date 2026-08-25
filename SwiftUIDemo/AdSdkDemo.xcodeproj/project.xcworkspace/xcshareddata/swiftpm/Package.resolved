@@ -1,0 +1,15 @@
+{
+  "originHash" : "f7488e2f99b536b1e14c147398a743faa7c26126e9c44090fe78d6efe7e5bba3",
+  "pins" : [
+    {
+      "identity" : "ios-moneyoyo-ad-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Moneyoyo/ios-moneyoyo-ad-sdk",
+      "state" : {
+        "revision" : "1f0e629d524971ba8f3453689ee669310830fd31",
+        "version" : "0.1.1"
+      }
+    }
+  ],
+  "version" : 3
+}
