@@ -6,7 +6,7 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Moneyoyo/ios-moneyoyo-ad-sdk",
       "state" : {
-        "revision" : "1f0e629d524971ba8f3453689ee669310830fd31",
+        "revision" : "4cafea044bc24d24137e6083aa04db1c713f501e",
         "version" : "0.1.1"
       }
     }

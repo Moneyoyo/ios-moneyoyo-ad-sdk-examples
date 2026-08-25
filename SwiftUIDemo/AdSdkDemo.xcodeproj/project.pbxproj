@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84B7ABD3303E293700B6A80A /* MoneyoyoAdSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 84B7ABD2303E293700B6A80A /* MoneyoyoAdSDK */; };
+		844AF314303F3CB800FFE4A2 /* MoneyoyoAdSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 844AF313303F3CB800FFE4A2 /* MoneyoyoAdSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84B7ABD3303E293700B6A80A /* MoneyoyoAdSDK in Frameworks */,
+				844AF314303F3CB800FFE4A2 /* MoneyoyoAdSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +70,7 @@
 			);
 			name = AdSdkDemo;
 			packageProductDependencies = (
-				84B7ABD2303E293700B6A80A /* MoneyoyoAdSDK */,
+				844AF313303F3CB800FFE4A2 /* MoneyoyoAdSDK */,
 			);
 			productName = AdSdkDemo;
 			productReference = 84B7ABB9303E26DE00B6A80A /* AdSdkDemo.app */;
@@ -101,7 +101,7 @@
 			mainGroup = 84B7ABB0303E26DE00B6A80A;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				84B7ABD1303E293700B6A80A /* XCRemoteSwiftPackageReference "ios-moneyoyo-ad-sdk" */,
+				844AF312303F3CB800FFE4A2 /* XCRemoteSwiftPackageReference "ios-moneyoyo-ad-sdk" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 84B7ABBA303E26DE00B6A80A /* Products */;
@@ -349,7 +349,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		84B7ABD1303E293700B6A80A /* XCRemoteSwiftPackageReference "ios-moneyoyo-ad-sdk" */ = {
+		844AF312303F3CB800FFE4A2 /* XCRemoteSwiftPackageReference "ios-moneyoyo-ad-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moneyoyo/ios-moneyoyo-ad-sdk";
 			requirement = {
@@ -360,9 +360,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		84B7ABD2303E293700B6A80A /* MoneyoyoAdSDK */ = {
+		844AF313303F3CB800FFE4A2 /* MoneyoyoAdSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 84B7ABD1303E293700B6A80A /* XCRemoteSwiftPackageReference "ios-moneyoyo-ad-sdk" */;
+			package = 844AF312303F3CB800FFE4A2 /* XCRemoteSwiftPackageReference "ios-moneyoyo-ad-sdk" */;
 			productName = MoneyoyoAdSDK;
 		};
 /* End XCSwiftPackageProductDependency section */
