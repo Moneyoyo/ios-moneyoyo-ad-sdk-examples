@@ -4,14 +4,20 @@
 //
 //  Created by admin on 26/8/26.
 //
-
+import MoneyoyoAdSDK
 import SwiftUI
 
 @main
 struct AdSdkDemoApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  init() {
+    Task {
+      try await AdSDK.initialize(appKey: Config.appKey, isTest: true)
     }
+  }
+
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
+    }
+  }
 }

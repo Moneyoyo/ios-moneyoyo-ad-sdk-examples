@@ -9,37 +9,42 @@ import MoneyoyoAdSDK
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var viewModel = AdViewModel()
+  @StateObject private var viewModel = BannerAdViewModel()
 
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundStyle(.tint)
-            Text(Bundle.main.bundleIdentifier ?? "no")
+  var body: some View {
+    VStack {
+      Image(systemName: "globe")
+        .imageScale(.large)
+        .foregroundStyle(.tint)
+      Text(Bundle.main.bundleIdentifier ?? "no")
 
-            if let error = viewModel.errorMessage {
-                Text(error)
-                        .font(.caption)
-                        .foregroundColor(.red)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal)
-            }
+      if let error = viewModel.errorMessage {
+        Text(error)
+          .font(.caption)
+          .foregroundColor(.red)
+          .multilineTextAlignment(.center)
+          .padding(.horizontal)
+      }
 
-            if let adView = viewModel.adView {
-                BannerAdRepresentable(adView: adView)
-                        .fixedSize()
-                        .background(Color.black)
-            }
-        }
-                .padding()
-                .task {
-            await viewModel.loadAd()
-        }
+      if let adView = viewModel.adView {
+        BannerAdRepresentable(adView: adView)
+          .fixedSize()
+          .background(Color.black)
+      }
     }
+    .padding()
+    .onAppear {
+      Task {
+        await viewModel.loadAd()
+      }
+    }
+    .onDisappear {
+      print("View disappeared. Cleaning up...")
+      viewModel.destroy()
+    }
+  }
 }
 
-
 #Preview {
-    ContentView()
+  ContentView()
 }
