@@ -1,6 +1,6 @@
-# Ad SDK Demo Swift (Storyboard)
+# Ad SDK Demo Objective-C
 
-Moneyoyo Ad SDK Integration Demo with Swift (Storyboard).
+Moneyoyo Ad SDK Integration Demo with Objective-C.
 
 ### Prerequisites
 
